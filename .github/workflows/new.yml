@@ -1,0 +1,14 @@
+name: theTest
+
+on:
+    push:
+        branches:
+            - main
+
+
+jobs:
+    first-job:
+        runs-on: windows-latest
+        steps:
+            - run: node --version
+            - run: npm --version
